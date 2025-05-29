@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [VtigerTestSuite]" verbose="2">
+  <test thread-count="5" name="marktingSuite(failed)" verbose="2">
+    <classes>
+      <class name="com.mondh.vtiger.TestScript.InventoryInvoiceTestScript">
+        <methods>
+          <include name="verifyVT005CreateInvoice"/>
+          <include name="beforeMethod"/>
+          <include name="afterMethod"/>
+        </methods>
+      </class> <!-- com.mondh.vtiger.TestScript.InventoryInvoiceTestScript -->
+    </classes>
+  </test> <!-- marktingSuite(failed) -->
+</suite> <!-- Failed suite [VtigerTestSuite] -->

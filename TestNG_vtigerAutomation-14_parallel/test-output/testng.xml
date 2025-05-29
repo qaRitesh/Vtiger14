@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="VtigerTesting" verbose="8" preserve-order="true">
+
+<!-- groups -->
+	<groups>
+		<run>
+							
+			<exclude name="Regression" />			<!-- Avoid only Regression NOt Run -->
+			<include name="Smoke" />			<!-- only run Some -->
+		</run>
+	</groups>
+
+<!-- parameter -->
+	<parameter name="browser" value="ChromeBrowser"/>
+	<parameter name="username" value="admin"/>
+	<parameter name="password" value="admin"/>
+
+<!-- class -->
+	<test name="marketing">
+		<classes>
+			<class
+				name="com.mondh.vtiger.TestScript.MarketingAccountTestScript">
+
+				<!-- <methods> <exclude name="verifyVT004DeleteAccount"/> </methods> -->
+			</class>
+
+			<class
+				name="com.mondh.vtiger.TestScript.InventoryInvoiceTestScript">
+				<methods>
+					<exclude name="verifyVT005CreateInvoice" />		<!--Avoid this method And Run other -->
+				</methods>
+			</class>
+
+		</classes>
+	</test>
+
+
+<!-- packages -->
+	<!-- <test name="package"> <packages> <package name="com.mondh.vtiger.TestScript"/> 
+		<package name="com.mondh.vtiger.TestScript"/>
+		 </packages> 
+		</test> -->
+
+
+
+</suite> 
