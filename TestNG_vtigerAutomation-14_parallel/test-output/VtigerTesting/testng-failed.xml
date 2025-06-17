@@ -16,14 +16,9 @@
         <methods>
           <include name="beforeClass"/>
           <include name="beforeMethod"/>
-          <include name="verifyVT002UpdateAccounts"/>
-          <include name="beforegroup"/>
           <include name="afterClass"/>
-          <include name="verifyVT003SearchAccounts"/>
           <include name="beforeSuite"/>
           <include name="verifyVT004DeleteAccount"/>
-          <include name="aftergroup"/>
-          <include name="verifyVT001CreateAccounts"/>
           <include name="afterMethod"/>
           <include name="afterSuite"/>
         </methods>

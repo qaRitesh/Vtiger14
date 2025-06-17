@@ -20,22 +20,10 @@ public class MarketingAccountTestScript extends BaseTest {
 
 	private WebUtil gm = WebUtil.getObject();
 	private CommonReusableCode comm;
-	DataUtile data=new DataUtile();
+	
 
 	
-	@DataProvider()
-	public Object[][] getData() {
-		
-		List<Map<String,String>>testCaseDataMapList=data.getAllTestCaseData("VT001",1);
-		int matchingTcIDCount=testCaseDataMapList.size();
-		
-		Object[][] dim2Arr=new Object[matchingTcIDCount][1];
-		
-		for(int i=0;i<=matchingTcIDCount-1;i++) {
-			dim2Arr[i][0] =testCaseDataMapList.get(i);
-	}
-	return dim2Arr;
-	}
+	
 	
 	
 	

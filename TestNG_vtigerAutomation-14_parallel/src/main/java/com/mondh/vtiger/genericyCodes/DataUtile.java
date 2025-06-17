@@ -70,7 +70,7 @@ public class DataUtile {
 	}
 
 // Check cellType String & Number:--------------------------------------------------------------------	
-	// thismethod will read from excel on the basis of row object and cell number
+	// this method will read from excel on the basis of row object and cell number
 	// it will manage data whether it is in string or integer.
 	public String getcellDataType(Row rowObj, int cellNumber) {
 		String data = null;

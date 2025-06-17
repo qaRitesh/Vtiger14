@@ -1,6 +1,8 @@
 package com.mondh.vtiger.TestScript;
 
 import java.lang.reflect.Method;
+import java.util.List;
+import java.util.Map;
 
 import org.testng.ITestResult;
 import org.testng.annotations.AfterClass;
@@ -13,6 +15,7 @@ import org.testng.annotations.BeforeGroups;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.BeforeSuite;
 import org.testng.annotations.BeforeTest;
+import org.testng.annotations.DataProvider;
 import org.testng.annotations.Parameters;
 
 import com.aventstack.extentreports.ExtentReports;
@@ -20,6 +23,7 @@ import com.aventstack.extentreports.ExtentTest;
 import com.aventstack.extentreports.Status;
 import com.aventstack.extentreports.reporter.ExtentSparkReporter;
 import com.mondh.vtiger.CommonBasic.CommonReusableCode;
+import com.mondh.vtiger.genericyCodes.DataUtile;
 import com.mondh.vtiger.genericyCodes.WebUtil;
 
 public class BaseTest {
@@ -28,6 +32,7 @@ public class BaseTest {
 	private CommonReusableCode comm;	
 	private ExtentReports extent;
 	private ExtentTest extTest;
+	DataUtile data=new DataUtile();
 	
 	@BeforeSuite(alwaysRun = true)
 	public void beforeSuite() {
@@ -54,6 +59,22 @@ public class BaseTest {
 		gm.openUrl("http://localhost:8888");
 		
 	}
+	
+	//Data Driven:
+	@DataProvider()
+	public Object[][] getData() {
+		
+		List<Map<String,String>>testCaseDataMapList=data.getAllTestCaseData("VT001",1);
+		int matchingTcIDCount=testCaseDataMapList.size();
+		
+		Object[][] dim2Arr=new Object[matchingTcIDCount][1];
+		
+		for(int i=0;i<=matchingTcIDCount-1;i++) {
+			dim2Arr[i][0] =testCaseDataMapList.get(i);
+	}
+	return dim2Arr;
+	}
+	
 	
 //before_group:	
 	@BeforeGroups(groups = {"Smoke"},alwaysRun = true)
