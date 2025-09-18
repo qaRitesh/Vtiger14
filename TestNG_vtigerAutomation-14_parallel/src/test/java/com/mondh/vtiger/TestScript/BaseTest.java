@@ -36,7 +36,7 @@ public class BaseTest {
 	
 	@BeforeSuite(alwaysRun = true)
 	public void beforeSuite() {
-		gm.loadProperties("Data");
+	//	gm.loadProperties("Data");
 		
 		extent=new ExtentReports();
 		ExtentSparkReporter spark=new ExtentSparkReporter("test-output/VtigerExtentReport.html");

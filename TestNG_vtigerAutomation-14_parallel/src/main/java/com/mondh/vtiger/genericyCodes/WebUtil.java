@@ -1451,7 +1451,6 @@ public class WebUtil {
 
 //getAllertText		
 	public void AlerSendText(String sendtext) {
-
 		try {
 			driver.switchTo().alert().sendKeys(sendtext);
 			extTest.log(Status.INFO, "Alert SendText  Successfully");
@@ -1459,14 +1458,12 @@ public class WebUtil {
 			e.printStackTrace();
 			extTest.log(Status.FAIL, "Alert SendText can't successfully ");
 		}
-
 	}
 
 //----------------------myverifyString---------myverifynumber---------------------------------------------------------------	
 
 	// myverifyString:
 	public void VerifyNumber(String acutalNumber, String expectedNumber) {
-
 		if (acutalNumber == expectedNumber) {
 			extTest.log(Status.PASS, "Passed.Actual-- " + acutalNumber + " && Expected- " + expectedNumber);
 		} else {
@@ -1477,7 +1474,6 @@ public class WebUtil {
 
 	// myverifynumber:
 	public void VerifyNumber(int acutalNumber, int expectedNumber) {
-
 		if (acutalNumber == expectedNumber) {
 			extTest.log(Status.PASS, "Passed.Actual-- " + acutalNumber + " && Expected- " + expectedNumber);
 		} else {
@@ -1491,7 +1487,6 @@ public class WebUtil {
 	//verifyinnerText:
 	public void VerifyInnerText(WebElement we, String expectedText) {
 		String acutalText = we.getText();
-
 		if (acutalText.equalsIgnoreCase(expectedText)) {
 			extTest.log(Status.PASS, "Passed.Actual-- " + acutalText + " && Expected- " + expectedText);
 		} else {
@@ -1636,7 +1631,6 @@ public class WebUtil {
 //-------------------------------------.properties_files-----------------------------------------
 
 	public void loadProperties(String propertiesFile) {
-
 		InputStream file = null;
 		try {
 			file = new FileInputStream(
@@ -1650,7 +1644,6 @@ public class WebUtil {
 		} catch (IOException e) {
 			e.printStackTrace();
 		}
-
 	}
 
 	public String getPropertyData(String keyName) {

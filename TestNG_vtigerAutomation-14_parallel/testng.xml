@@ -3,8 +3,7 @@
 <suite name="VtigerTesting" verbose="2" preserve-order="true" parallel="classes" thread-count="5">
 
 	<groups>
-		<run>
-							
+		<run>						
 			<exclude name="Regression" />			<!-- Avoid only Regression NOt Run -->
 			<include name="Smoke" />			<!-- only run Some -->
 		</run>

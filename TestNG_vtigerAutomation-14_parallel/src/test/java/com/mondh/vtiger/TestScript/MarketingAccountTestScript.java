@@ -20,13 +20,7 @@ public class MarketingAccountTestScript extends BaseTest {
 
 	private WebUtil gm = WebUtil.getObject();
 	private CommonReusableCode comm;
-	
-
-	
-	
-	
-	
-	
+		
 //Create_Account:	
 	@Test(priority =1 , groups = { "Smoke"},dataProvider = "getData")
 	public void verifyVT001CreateAccounts(Map<String,String>testCaseDataMap) throws Exception {
