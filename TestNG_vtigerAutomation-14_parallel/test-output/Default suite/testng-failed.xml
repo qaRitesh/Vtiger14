@@ -6,15 +6,12 @@
       <class name="com.mondh.vtiger.TestScript.MarketingAccountTestScript">
         <methods>
           <include name="beforeClass"/>
-          <include name="beforeMethod"/>
           <include name="verifyVT002UpdateAccounts"/>
+          <include name="beforeMethod"/>
           <include name="beforegroup"/>
           <include name="afterClass"/>
           <include name="beforeSuite"/>
-          <include name="verifyVT003SearchAccounts"/>
           <include name="aftergroup"/>
-          <include name="verifyVT004DeleteAccount"/>
-          <include name="verifyVT001CreateAccounts"/>
           <include name="afterMethod"/>
           <include name="afterSuite"/>
         </methods>

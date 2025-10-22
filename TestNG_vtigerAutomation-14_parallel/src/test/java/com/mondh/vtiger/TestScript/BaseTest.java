@@ -36,7 +36,7 @@ public class BaseTest {
 	
 	@BeforeSuite(alwaysRun = true)
 	public void beforeSuite() {
-		gm.loadProperties("Data");
+	//	gm.loadProperties("Data");
 		
 		extent=new ExtentReports();
 		ExtentSparkReporter spark=new ExtentSparkReporter("test-output/VtigerExtentReport.html");
@@ -47,8 +47,7 @@ public class BaseTest {
 //	@BeforeTest(alwaysRun = true)
 //	public void beforeTest() {		
 //		System.out.println("DataBase Connect");
-//	}
-//	
+//	}	
 
 //LunchBrower:	
 	@Parameters("browser")
