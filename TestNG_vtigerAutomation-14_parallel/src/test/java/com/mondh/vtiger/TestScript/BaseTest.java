@@ -47,8 +47,7 @@ public class BaseTest {
 //	@BeforeTest(alwaysRun = true)
 //	public void beforeTest() {		
 //		System.out.println("DataBase Connect");
-//	}
-//	
+//	}	
 
 //LunchBrower:	
 	@Parameters("browser")
