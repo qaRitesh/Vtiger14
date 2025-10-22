@@ -17,16 +17,15 @@ import org.apache.poi.ss.usermodel.Workbook;
 import org.apache.poi.xssf.usermodel.XSSFWorkbook;
 
 public class DataUtile {
-	
-	//diffrent keys & Diffirent value:	
-	private String excelFilePath="src\\test\\resources\\dataExcel.xlsx";	
-	private String sheetName="DataSheet";
-	
-	//One Keys & Diffrent value:
-	private String pageExcelFilePath="\\src\\test\\resources\\pageData.xlsx";
-	private String sheetNamePOM="PageDD";
-	private String hearderDataIDcolumn="DataID";
-	
+
+	// diffrent keys & Diffirent value:
+	private String excelFilePath = "src\\test\\resources\\dataExcel.xlsx";
+	private String sheetName = "DataSheet";
+
+	// One Keys & Diffrent value:
+	private String pageExcelFilePath = "\\src\\test\\resources\\pageData.xlsx";
+	private String sheetNamePOM = "PageDD";
+	private String hearderDataIDcolumn = "DataID";
 
 	public static void main(String[] args) {
 		DataUtile data = new DataUtile();
